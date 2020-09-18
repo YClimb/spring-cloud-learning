@@ -30,9 +30,9 @@
         <mybatis-plus.version>3.1.0</mybatis-plus.version>
     </properties>
 
-    <!--<modules>
+    <modules>
         <module>../mall-consul</module>
-    </modules>-->
+    </modules>
 
     <dependencyManagement>
         <dependencies>
