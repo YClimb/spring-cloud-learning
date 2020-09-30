@@ -1,4 +1,4 @@
-package com.alibaba.cloud;
+package com.example.demo;
 
 /**
  * Dubbo 服务接口
