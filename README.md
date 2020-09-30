@@ -10,6 +10,8 @@ Spring Cloud & Spring Cloud Alibaba Learning Project
             - 使用 Nacos Config 实现 Bean 动态刷新
         - nacos-discovery-provider-sample           // Nacos Discovery Provider Sample
             - 掌握 Nacos Discovery 实现 Spring Cloud 服务注册和发现
+        - nacos-discovery-consumer-sample           // Nacos Discovery Consumer Sample
+            - Nacos Discovery 整合 @LoadBalanced RestTemplate 以及 Open Feign
         - .gitignore
         - README.md
         
