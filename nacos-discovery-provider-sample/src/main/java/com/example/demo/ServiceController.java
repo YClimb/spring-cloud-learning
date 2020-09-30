@@ -15,6 +15,8 @@ public class ServiceController {
 
     @GetMapping("/echo/{message}")
     public String echo(@PathVariable String message) {
+        // 增加打印日志，便于 consumer 调用查询
+        System.out.println("[ECHO] : " + message);
         return "[ECHO] : " + message;
     }
 }
