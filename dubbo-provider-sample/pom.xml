@@ -34,6 +34,13 @@
             <artifactId>spring-cloud-starter-dubbo</artifactId>
         </dependency>
 
+        <!-- Dubbo 服务 artifact -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>dubbo-sample-api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>

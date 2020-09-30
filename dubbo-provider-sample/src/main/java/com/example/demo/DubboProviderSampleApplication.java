@@ -2,6 +2,7 @@ package com.example.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  * https://start.aliyun.com/article/sca7lesson/rpc
@@ -9,6 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author yclimb
  * @date 2020/9/30
  */
+@EnableDiscoveryClient
 @SpringBootApplication
 public class DubboProviderSampleApplication {
 

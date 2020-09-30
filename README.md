@@ -14,8 +14,8 @@ Spring Cloud & Spring Cloud Alibaba Learning Project
             - Nacos Discovery 整合 @LoadBalanced RestTemplate 以及 Open Feign 服务调用
         - dubbo-provider-sample
             - Dubbo Spring Cloud 服务提供方应用
-        - xxx
-            - xxx
+        - dubbo-sample-api
+            - Dubbo 服务接口
         - .gitignore
         - README.md
         
