@@ -11,7 +11,7 @@ Spring Cloud & Spring Cloud Alibaba Learning Project
         - nacos-discovery-provider-sample           // Nacos Discovery Provider Sample
             - 掌握 Nacos Discovery 实现 Spring Cloud 服务注册和发现
         - nacos-discovery-consumer-sample           // Nacos Discovery Consumer Sample
-            - Nacos Discovery 整合 @LoadBalanced RestTemplate 以及 Open Feign
+            - Nacos Discovery 整合 @LoadBalanced RestTemplate 以及 Open Feign 服务调用
         - .gitignore
         - README.md
         
