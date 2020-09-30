@@ -4,7 +4,7 @@ import com.alibaba.cloud.EchoService;
 import org.apache.dubbo.config.annotation.Service;
 
 /**
- * model
+ * Dubbo 服务提供方
  *
  * @author yclimb
  * @date 2020/9/30
