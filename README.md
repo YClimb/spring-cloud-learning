@@ -18,6 +18,10 @@ Spring Cloud & Spring Cloud Alibaba Learning Project
             - 掌握 Nacos Discovery 实现 Spring Cloud 服务注册和发现
         - nacos-discovery-consumer-sample
             - Nacos Discovery 整合 @LoadBalanced RestTemplate 以及 Open Feign 服务调用
+        - sentinel-sample
+            - 使用 Sentinel Starter 完成 Spring Cloud 应用的限流管理
+        - xxx
+            - xxx
         - .gitignore
         - README.md
         
