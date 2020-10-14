@@ -26,7 +26,7 @@ public class CustomerController {
     @Autowired
     private ProviderFeignService providerFeignService;
 
-    @Value("${user.name:yuhb}")
+    @Value("${user.name:yclimb}")
     private String name;
 
     @Value("${user.age:18}")
@@ -34,8 +34,8 @@ public class CustomerController {
 
     /**
      * Dubbo 方式调用
-     * @param name
-     * @return
+     * @param name name
+     * @return String
      */
     @GetMapping("/dubbo/echo/{name}")
     public String dubboEcho(@PathVariable("name") String name) {
@@ -44,8 +44,8 @@ public class CustomerController {
 
     /**
      * Open Feign 方式调用
-     * @param name
-     * @return
+     * @param name name
+     * @return String
      */
     @GetMapping("/feign/echo")
     public String feignEcho(String name) {
@@ -56,7 +56,7 @@ public class CustomerController {
      * Nacos 动态获取配置
      * Nacos 控制台新建配置
      * dataid : common.yaml 并添加属性 user.name user.age
-     * @return
+     * @return String
      */
     @GetMapping("/dynamicConfig")
     public String dubboEcho() {

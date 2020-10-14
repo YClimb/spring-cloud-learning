@@ -1,12 +1,12 @@
 package io.seata.samples.sca.provider.dubbo;
 
 import io.seata.samples.sca.common.dubbo.api.DubboEchoService;
-import org.apache.dubbo.config.annotation.Service;
+import org.apache.dubbo.config.annotation.DubboService;
 
 /**
  * Created by yu.hb on 2019-10-30
  */
-@Service
+@DubboService
 public class DubboEchoServiceImpl implements DubboEchoService {
 
     @Override
