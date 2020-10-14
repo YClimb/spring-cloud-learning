@@ -21,6 +21,11 @@ Spring Cloud & Spring Cloud Alibaba Learning Project
         - rocketmq-sample
             - 使用 RocketMQ 整合 Spring Cloud Stream 完成消息的发送和接收
             - 使用 RocketMQ 原生方法完成消息的发送和接收
+        - seata-sample
+            - Spring Cloud Alibaba + Nacos + Dubbo + OpenFeign + Sentinel + Seata
+            - sca-common 项目公用模块（实体类，Dubbo Api等）
+            - sca-customer 消费者
+            - sca-provider 服务提供者
         - sentinel-sample
             - 使用 Sentinel Starter 完成 Spring Cloud 应用的限流管理
         - xxx
