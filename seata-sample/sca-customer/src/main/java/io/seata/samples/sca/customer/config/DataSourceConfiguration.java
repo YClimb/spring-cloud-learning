@@ -25,7 +25,6 @@ import java.io.IOException;
 @EnableConfigurationProperties({MybatisProperties.class})
 public class DataSourceConfiguration {
 
-
     @Bean
     @ConfigurationProperties(prefix = "spring.datasource")
     public DataSource dataSource() {

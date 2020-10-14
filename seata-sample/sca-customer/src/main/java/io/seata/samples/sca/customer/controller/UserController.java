@@ -1,12 +1,12 @@
 package io.seata.samples.sca.customer.controller;
 
+import io.seata.core.context.RootContext;
 import io.seata.samples.sca.common.domain.TbUser;
 import io.seata.samples.sca.common.dubbo.api.UserService;
 import io.seata.samples.sca.customer.mapper.TbUserMapper;
-import io.seata.core.context.RootContext;
 import io.seata.spring.annotation.GlobalTransactional;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.dubbo.config.annotation.Reference;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -22,14 +22,14 @@ CREATE TABLE `tb_user` (
  PRIMARY KEY (`id`)
  ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8
 
- * author: yu.hb
- * Date: 2019-11-01
+ * @author yclimb
+ * @date 2020/10/14
  */
 @RestController
 @Slf4j
 public class UserController {
 
-    @Reference
+    @DubboReference
     private UserService userService;
 
     @Autowired
@@ -37,7 +37,7 @@ public class UserController {
 
     /**
      * seata 全局事务控制
-     * @param user
+     * @param user user
      */
     @PostMapping("/seata/user/add")
     @GlobalTransactional(rollbackFor = Exception.class) // 开启全局事务

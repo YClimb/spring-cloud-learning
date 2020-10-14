@@ -1,6 +1,5 @@
 package io.seata.samples.sca.customer.mapper;
 
-
 import io.seata.samples.sca.common.domain.TbUser;
 
 public interface TbUserMapper {

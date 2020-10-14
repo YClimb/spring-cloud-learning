@@ -2,7 +2,7 @@ package io.seata.samples.sca.customer.controller;
 
 import io.seata.samples.sca.common.dubbo.api.DubboEchoService;
 import io.seata.samples.sca.customer.feign.ProviderFeignService;
-import org.apache.dubbo.config.annotation.Reference;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
@@ -11,13 +11,16 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Created by yu.hb on 2019-10-30
+ * 客户端控制器
+ *
+ * @author yclimb
+ * @date 2020/10/14
  */
 @RestController
 @RefreshScope // Nacos动态刷新配置
 public class CustomerController {
 
-    @Reference
+    @DubboReference
     private DubboEchoService dubboEchoService;
 
     @Autowired
