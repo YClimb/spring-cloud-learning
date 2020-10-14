@@ -13,6 +13,14 @@
     <artifactId>sca-customer</artifactId>
     <packaging>jar</packaging>
 
+    <!-- 引用 version 写在了 parent.pom 中，也可以打开以下注释，使用当前 pom version -->
+    <properties>
+        <!--<sca-common.version>0.0.1-SNAPSHOT</sca-common.version>
+        <mybatis-generator-core.version>1.3.7</mybatis-generator-core.version>
+        <mybatis-spring-boot-starter.version>2.1.1</mybatis-spring-boot-starter.version>
+        <mysql-connector-java.version>5.1.34</mysql-connector-java.version>
+        <spring-cloud-starter-openfeign.version>2.2.2.RELEASE</spring-cloud-starter-openfeign.version>-->
+    </properties>
 
     <dependencies>
         <dependency>
@@ -32,7 +40,7 @@
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>sca-common</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>${sca-common.version}</version>
         </dependency>
 
         <!-- Nacos Discovery -->
@@ -63,14 +71,14 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
-            <version>2.2.2.RELEASE</version>
+            <version>${spring-cloud-starter-openfeign.version}</version>
         </dependency>
 
         <!-- mybatis -->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>2.1.1</version>
+            <version>${mybatis-spring-boot-starter.version}</version>
         </dependency>
         <!-- mybatis -->
 
@@ -78,14 +86,15 @@
         <dependency>
             <groupId>org.mybatis.generator</groupId>
             <artifactId>mybatis-generator-core</artifactId>
-            <version>1.3.7</version>
+            <version>${mybatis-generator-core.version}</version>
         </dependency>
         <!--mybatis-generator-->
 
+        <!-- mysql-connector-java -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.34</version>
+            <version>${mysql-connector-java.version}</version>
         </dependency>
 
     </dependencies>
