@@ -53,9 +53,10 @@ public class CustomerController {
     }
 
     /**
-     * Nacos 动态获取配置
-     * Nacos 控制台新建配置
-     * dataid : common.yaml 并添加属性 user.name user.age
+     * Nacos 动态获取配置：
+     * bootstrap.properties 中增加 spring.cloud.nacos.config.shared-configs[0].data-id : sca-customer.properties
+     * Nacos 控制台新建配置：
+     * sca-customer.properties 并添加属性 user.name user.age
      * @return String
      */
     @GetMapping("/dynamicConfig")

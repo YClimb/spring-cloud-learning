@@ -6,6 +6,7 @@ dubbo:
         # dubbo 协议
         name: dubbo
         # dubbo 协议端口（ -1 表示自增端口，从 20880 开始）
+        # PS：此处不可省略，否则端口会从 20880 开始，与 provider 20880 端口冲突，设置 -1 后，自动切换为 20881
         port: -1
     registry:
         # 挂载到 Spring Cloud 注册中心
