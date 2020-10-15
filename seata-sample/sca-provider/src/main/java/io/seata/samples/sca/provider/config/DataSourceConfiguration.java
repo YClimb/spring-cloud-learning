@@ -16,15 +16,9 @@ import org.springframework.core.io.support.ResourcePatternResolver;
 import javax.sql.DataSource;
 import java.io.IOException;
 
-/**
- * Description:
- * author: yu.hb
- * Date: 2019-11-01
- */
 @Configuration
 @EnableConfigurationProperties({MybatisProperties.class})
 public class DataSourceConfiguration {
-
 
     @Bean
     @ConfigurationProperties(prefix = "spring.datasource")
